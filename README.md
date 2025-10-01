@@ -1,28 +1,79 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+Testes Automatizados com Cypress - Básico
 
-👋 Seja bem-vindo(a)!
+Este repositório contém os exercícios práticos do curso "Testes Automatizados com Cypress do Zero a Nuvem" da Udemy. O objetivo deste curso é ensinar como criar testes automatizados rápidos e confiáveis para aplicações web utilizando o framework Cypress.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+📚 Conteúdo do Curso
 
-## O que você vai aprender?
+O curso aborda os seguintes tópicos:
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+Introdução ao Cypress: Visão geral do framework e suas vantagens.
 
-## Vamos começar?
+Instalação e Configuração: Como instalar o Cypress e configurar o ambiente de desenvolvimento.
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+Comandos Básicos: Uso de comandos como cy.visit(), cy.get(), cy.contains(), cy.click(), entre outros.
 
-___
+Interações com Formulários: Automação de preenchimento de formulários e validação de entradas.
 
-Este é um curso da **Escola Talking About Testing**.
+Testes de API: Como realizar testes em APIs utilizando o Cypress.
+
+Execução em Integração Contínua: Configuração do Cypress para rodar em pipelines de CI/CD.
+
+Integração com Cypress Cloud: Como integrar os testes com o Cypress Cloud para visualização de resultados.
+
+🛠️ Tecnologias Utilizadas
+
+Cypress: Framework de testes end-to-end para aplicações web.
+
+JavaScript (ES6+): Linguagem de programação utilizada para escrever os testes.
+
+Node.js: Ambiente de execução para o JavaScript no lado do servidor.
+
+Git: Sistema de controle de versão para gerenciar o código-fonte.
+
+GitHub Actions: Ferramenta de integração contínua para automação de workflows
+
+📂 Estrutura de Pastas Recomendada
+
+exercicios-cypress/
+├── cypress/
+│   ├── e2e/                     # Testes end-to-end (arquivos .cy.js)
+│   │   ├── login.cy.js
+│   │   └── cadastro.cy.js
+│   ├── fixtures/                # Dados de teste (JSON, arquivos estáticos)
+│   │   └── usuarios.json
+│   ├── support/                 # Arquivos de suporte e comandos personalizados
+│   │   ├── commands.js
+│   │   ├── locators.js
+│   │   └── e2e.js
+│   └── plugins/                 # Plugins do Cypress (se necessário)
+│       └── index.js
+├── src/                         # Código-fonte do projeto (se aplicável)
+│   └── index.html
+├── .gitignore                   # Arquivos a serem ignorados pelo Git
+├── cypress.config.js            # Configurações do Cypress
+├── package.json                 # Dependências e scripts do projeto
+└── README.md                    # Documentação do projeto
+
+🧪 Organização dos Testes
+
+cypress/e2e/: Contém os arquivos de teste com a extensão .cy.js. Cada arquivo deve representar um conjunto de testes relacionados a uma funcionalidade específica, como login.cy.js ou cadastro.cy.js. 
+docs.cypress.io
+
+cypress/fixtures/: Armazena dados estáticos utilizados nos testes, como arquivos JSON contendo informações de usuários ou produtos. 
+devealbert.hashnode.dev
+
+cypress/support/:
+
+commands.js: Define comandos personalizados que podem ser reutilizados em múltiplos testes.
+
+locators.js: Armazena seletores CSS ou XPath, facilitando a manutenção e evitando repetição de código.
+
+e2e.js: Arquivo de configuração global para os testes, onde podem ser definidos hooks como beforeEach e afterEach. 
+docs.cypress.io
+
+🔧 Configurações do Cypress
+
+cypress.config.js: Arquivo de configuração principal do Cypress, onde são definidas as configurações globais para o projeto. 
+docs.cypress.io
+
+package.json: Contém as dependências do projeto, scripts para execução dos testes e outras configurações relacionadas ao ambiente de desenvolvimento.
