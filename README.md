@@ -1,4 +1,4 @@
-Testes Automatizados com Cypress - Básico
+Testes Automatizados com Cypress
 
 Este repositório contém os exercícios práticos do curso "Testes Automatizados com Cypress do Zero a Nuvem" da Udemy. O objetivo deste curso é ensinar como criar testes automatizados rápidos e confiáveis para aplicações web utilizando o framework Cypress.
 
