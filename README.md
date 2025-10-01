@@ -22,37 +22,39 @@ Integração com Cypress Cloud: Como integrar os testes com o Cypress Cloud para
 
 🛠️ Tecnologias Utilizadas
 
-Cypress: Framework de testes end-to-end para aplicações web.
+Cypress: Framework de testes end-to-end para aplicações web.<br/>
 
-JavaScript (ES6+): Linguagem de programação utilizada para escrever os testes.
+JavaScript (ES6+): Linguagem de programação utilizada para escrever os testes.<br/>
 
-Node.js: Ambiente de execução para o JavaScript no lado do servidor.
+Node.js: Ambiente de execução para o JavaScript no lado do servidor.<br/>
 
-Git: Sistema de controle de versão para gerenciar o código-fonte.
+Git: Sistema de controle de versão para gerenciar o código-fonte.<br/>
 
-GitHub Actions: Ferramenta de integração contínua para automação de workflows
+GitHub Actions: Ferramenta de integração contínua para automação de workflows<br/>
 
 
 🧪 Organização dos Testes
 
-cypress/e2e/: Contém os arquivos de teste com a extensão .cy.js. Cada arquivo deve representar um conjunto de testes relacionados a uma funcionalidade específica, como login.cy.js ou cadastro.cy.js. 
+cypress/e2e/: Contém os arquivos de teste com a extensão .cy.js.<br/> 
+
+Cada arquivo deve representar um conjunto de testes relacionados a uma funcionalidade específica, como login.cy.js ou cadastro.cy.js. 
 docs.cypress.io
 
 cypress/fixtures/: Armazena dados estáticos utilizados nos testes, como arquivos JSON contendo informações de usuários ou produtos. 
 devealbert.hashnode.dev
 
-cypress/support/:
+cypress/support/:<br/>
 
-commands.js: Define comandos personalizados que podem ser reutilizados em múltiplos testes.
+commands.js: Define comandos personalizados que podem ser reutilizados em múltiplos testes.<br/>
 
-locators.js: Armazena seletores CSS ou XPath, facilitando a manutenção e evitando repetição de código.
+locators.js: Armazena seletores CSS ou XPath, facilitando a manutenção e evitando repetição de código.<br/>
 
-e2e.js: Arquivo de configuração global para os testes, onde podem ser definidos hooks como beforeEach e afterEach. 
+e2e.js: Arquivo de configuração global para os testes, onde podem ser definidos hooks como beforeEach e afterEach. <br/>
 docs.cypress.io
 
 🔧 Configurações do Cypress
 
 cypress.config.js: Arquivo de configuração principal do Cypress, onde são definidas as configurações globais para o projeto. 
-docs.cypress.io
+docs.cypress.io<br/>
 
 package.json: Contém as dependências do projeto, scripts para execução dos testes e outras configurações relacionadas ao ambiente de desenvolvimento.
