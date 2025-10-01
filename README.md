@@ -32,27 +32,6 @@ Git: Sistema de controle de versão para gerenciar o código-fonte.
 
 GitHub Actions: Ferramenta de integração contínua para automação de workflows
 
-📂 Estrutura de Pastas Recomendada
-
-exercicios-cypress/
-├── cypress/
-│   ├── e2e/                     # Testes end-to-end (arquivos .cy.js)
-│   │   ├── login.cy.js
-│   │   └── cadastro.cy.js
-│   ├── fixtures/                # Dados de teste (JSON, arquivos estáticos)
-│   │   └── usuarios.json
-│   ├── support/                 # Arquivos de suporte e comandos personalizados
-│   │   ├── commands.js
-│   │   ├── locators.js
-│   │   └── e2e.js
-│   └── plugins/                 # Plugins do Cypress (se necessário)
-│       └── index.js
-├── src/                         # Código-fonte do projeto (se aplicável)
-│   └── index.html
-├── .gitignore                   # Arquivos a serem ignorados pelo Git
-├── cypress.config.js            # Configurações do Cypress
-├── package.json                 # Dependências e scripts do projeto
-└── README.md                    # Documentação do projeto
 
 🧪 Organização dos Testes
 
